@@ -12,6 +12,7 @@
 }
 a, a:link, a:visited  {
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover  {
@@ -527,4 +528,6 @@ a:visited{
 #green__button:hover{
     opacity: 70%;
 }
-
+.card ul li{
+    list-style: inside;
+}
