@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url("fonts/Lato-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url("fonts/Lato-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url("fonts/Lato-Semibold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url("fonts/Georgia.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url("fonts/georgia-bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url("fonts/Avenir-Black.ttf");
+    font-weight: 900;
+}
+header{
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
+.container{
+    margin: 0 auto;
+    width: 1400px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav{
+    display: flex;
+    gap: 70px;
+}
+.header__logo{
+    font-family: "Avenir-Black";
+    font-weight: 900;
+    color: #01996D;
+    font-size: 40px;
+}
+.header__nav{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #292929;
+}
+.header__Sign{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+.header__Start{
+    align-items: center;
+    padding: 13px 50px;
+    margin-left: 30px;
+
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.back__image{
+    display: flex;
+    height: 100vh;
+}
+.back-image__fill{
+    background: url("img/girl_filter.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    padding-top: 175px;
+    padding-bottom: 336px;
+    padding-left: 50px;
+}
+.back__image h1{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    color: #01996D;
+}
+.back-image__sub{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #484848;
+    width: 420px;
+    margin-top: 20px;
+}
+.back-image__Find{
+    align-items: center;
+    padding: 20px 50px;
+    gap: 30px;
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 47px;
+}
+.gradient {
+    height: 100%;
+    width: 192px;
+    background-image: linear-gradient(180deg, #FFFFFF, #d5d5d5);
+}
+.middle__one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.middle__subscription{
+    width: 670px;
+}
+.middle{
+    padding-top: 170px;
+}
+.middle__how{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #424242;
+}
+.middle-understand-sub{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+    width: 580px;
+}
+.middle__subscription{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #424242;
+}
+.middle__second{
+    display: grid;
+    padding-top: 220px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(13,80px);
+    column-gap: 95px;
+}
+.personalize_title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+
+}
+.personalize-sub{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #424242;
+    width: 380px;
+    margin-top: 50px;
+
+}
+.number{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.2);
+    position: absolute;
+    left: 30px;
+    top: -150px;
+
+}
+.number__index{
+    position: relative;
+}
+.image__01{
+    margin-top: 60px;
+}
+.middle__write\&understand{
+    grid-column: 2;
+    grid-row: 5;
+}
+.middle__personalize{
+    grid-column: 1;
+}
+.middle__alivio{
+    grid-column: 3;
+}
+.write_title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: right;
+    color: #000000;
+}
+.video__insert{
+    background-color: #245852;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 230px;
+    padding-bottom: 175px;
+}
+.video__title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #FFFFFF;
+    width: 580px;
+}
+.video__subtitle{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+.video__button{
+    align-items: center;
+    padding: 20px 50px;
+    gap: 30px;
+
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+    margin-top: 55px;
+}
+.video__insert .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.our__products .container{
+    display: flex;
+    justify-content: space-between;
+}
+.our__products{
+    padding-top: 120px;
+    padding-bottom: 168px;
+}
+.product__sub{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: #424242;
+}
+.product__title{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #01996D;
+    width: 650px;
+    margin-top: 20px;
+}
+.product__subtitle{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    width: 600px;
+    color: #484848;
+    margin-top: 20px;
+}
+.image_card{
+    position: relative;
+}
+.card{
+    height: 300px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: -30px;
+    left: -50px;
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+    border-radius: 3.72971px;
+    padding-top: 22px;
+}
+.circle__image{
+    border-radius: 50%;
+    height: 55px;
+    width: 65px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 15px;
+}
+.card__title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.49px;
+    text-align: center;
+    padding-bottom: 8px;
+    color: #000000;
+    border-bottom: 0.745942px solid #000000;
+}
+.girlcard__sub{
+    margin-top: 10px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.9351px;
+    line-height: 157%;
+    color: #000000;
+}
+.card__content{
+    margin-top: 20px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.9292px;
+    line-height: 157%;
+    color: #000000;
+
+}
+.card li{
+    margin: 15px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.6195px;
+    line-height: 157%;
+    color: #000000;
+}
+footer{
+    background: #245852;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.footer__title{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+footer li{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+.footer__images{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 300px;
+}
+.footer__social{
+    display: flex;
+    gap: 50px;
+}
+.facebook, .twitter{
+    background: #FFFFFF;
+    border-radius: 50%;
+    height: 82px;
+    width: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagram{
+    background: conic-gradient(180deg);
+    border-radius: 50%;
+    height: 82px;
+    width: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(from 180deg at 50% 50%, #80A4CE 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+}
+.footer__apps{
+    display: flex;
+    position: relative;
+    gap:15px;
+}
+.footer__apps::before {
+    content: "Discover our solutions";
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 124.5%;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    position: absolute;
+    left: 25%;
+    top: -50px;
+}
+a:visited{
+    color: inherit;
+}
+#green__button:hover{
+    opacity: 70%;
+}
+
